@@ -47,7 +47,7 @@
       <img src="logo.png" alt="Marigold Logo" style="height: 60px;" />
       <nav>
         <a href="#">Main Page</a>
-        <a href="#projects">Our Projects</a>
+        <a href="#grid">Our Projects</a>
         <a href="#work">Looking to Work With Us?</a>
         <a href="#about">About Us</a>
         <a href="#contact">Contact</a>
@@ -65,7 +65,7 @@
     </section>
 
     <section id="grid">
-      <h3>OUR PROJECTS</h3>
+      <h3>projects</h3>
 
       <div class="grid-section">
         <h4>Marigold Originals</h4>
@@ -95,6 +95,8 @@
         <div class="scrolling-grid">
           <div class="grid-item rewritten">FNaF 2: Rewritten</div>
           <div class="grid-item snakepit">SnakePit</div>
+          <div class="grid-item boundless">Five Nights At Blank's</div>
+
         </div>
       </div>
     </section>
@@ -112,7 +114,7 @@
 </section>
 
 <!-- Looking to Work With Us Section -->
-<section id="work-with-us" class="glass scroll-fade-in">
+<section id="work" class="glass scroll-fade-in">
   <h3>Looking to Work With Us?</h3>
   <p>
     To try and work with us, you’ll need to contact either the manager or the owner directly. After that, a document with more information will be sent to you.
@@ -263,28 +265,52 @@
   }
 </style>
 <script>
-  const projects = {
-    "Fazbear's Fright": {
-      color: "#ef4444",
-      description: `Fazbear's Fright follows Nicholas Hart—Nick for short—as he takes a job working the night shift at a horror attraction built around the legends of Freddy Fazbear's Pizza. At first, it seems like just another creepy night job, but things quickly take a dark turn. Nick begins seeing strange, ghostly figures—phantoms of the old animatronics. As the nights go on, the phantoms become more intense, and Nick starts to lose his grip on reality. However, instead of breaking down completely, he slowly gets used to their presence... even if they’re not entirely harmless.`
-    },
-    "Orange INC: Multiverse Shenanigans": {
-      color: "#f59e0b",
-      description: `Orange Inc: Multiverse Shenanigans follows Ryan, Sola, and Medron as they get trapped far from home, thrown into the chaos of the multiverse. With no clear way back, the trio travels from one strange and unpredictable universe to another, each with its own weird rules, dangers, and surprises. Along the way, they face bizarre enemies, unexpected allies, and versions of themselves they never imagined. All they want is to get home—but the multiverse has other plans.`
-    },
-    "Showtime's End": {
-      color: "#8b5cf6",
-      description: `Showtime's End follows Freddy and the gang as they go about their everyday lives, putting on shows, hanging out, and just trying to enjoy their time together. On the surface, everything seems normal and lighthearted—but underneath it all, something darker is brewing. Strange events, hidden secrets, and mysterious clues begin to surface, hinting at a past none of them fully remember and a future that could change everything.`
-    },
-    Malware: {
-      color: "#3b82f6",
-      description: `Malware is set in a world where a powerful and mysterious virus has been uploaded into the systems of Freddy and the other animatronics. What starts as a normal day quickly turns into a fight for survival as the virus spreads, corrupting others and turning them hostile. Freddy and his remaining friends must escape the ruined pizzerias and flee into nearby cities, searching for safety while avoiding infection. With danger around every corner and no one they can fully trust, the group must stick together if they want to survive—and find a way to stop the virus before it consumes everything.`
-    },
-    TheOffenders: {
-      color: "#10b981",
-      description: `The Offenders follows Dog-Man—an immortal, over-the-top hero—and his occasional partner Fossyl as they cause chaos and get into all kinds of wild shenanigans in the city of Los Santos. Whether they’re stopping crime, blowing stuff up, or just being ridiculous, nothing ever goes quite as planned. With their own brand of justice (and a lot of property damage), The Offenders turn every day into a crazy adventure in a city that’s already out of control.`
-    }
-  };
+const projects = {
+  "Fazbear's Fright": {
+    color: "#ef4444",
+    description: `Fazbear's Fright follows Nicholas Hart—Nick for short—as he takes a job working the night shift at a horror attraction built around the legends of Freddy Fazbear's Pizza. At first, it seems like just another creepy night job, but things quickly take a dark turn. Nick begins seeing strange, ghostly figures—phantoms of the old animatronics. As the nights go on, the phantoms become more intense, and Nick starts to lose his grip on reality. However, instead of breaking down completely, he slowly gets used to their presence... even if they’re not entirely harmless.`
+  },
+  "Orange INC: Multiverse Shenanigans": {
+    color: "#f59e0b",
+    description: `Orange Inc: Multiverse Shenanigans follows Ryan, Sola, and Medron as they get trapped far from home, thrown into the chaos of the multiverse. With no clear way back, the trio travels from one strange and unpredictable universe to another, each with its own weird rules, dangers, and surprises. Along the way, they face bizarre enemies, unexpected allies, and versions of themselves they never imagined. All they want is to get home—but the multiverse has other plans.`
+  },
+  "Showtime's End": {
+    color: "#8b5cf6",
+    description: `Showtime's End follows Freddy and the gang as they go about their everyday lives, putting on shows, hanging out, and just trying to enjoy their time together. On the surface, everything seems normal and lighthearted—but underneath it all, something darker is brewing. Strange events, hidden secrets, and mysterious clues begin to surface, hinting at a past none of them fully remember and a future that could change everything.`
+  },
+  Malware: {
+    color: "#3b82f6",
+    description: `Malware is set in a world where a powerful and mysterious virus has been uploaded into the systems of Freddy and the other animatronics. What starts as a normal day quickly turns into a fight for survival as the virus spreads, corrupting others and turning them hostile. Freddy and his remaining friends must escape the ruined pizzerias and flee into nearby cities, searching for safety while avoiding infection. With danger around every corner and no one they can fully trust, the group must stick together if they want to survive—and find a way to stop the virus before it consumes everything.`
+  },
+  TheOffenders: {
+    color: "#10b981",
+    description: `The Offenders follows Dog-Man—an immortal, over-the-top hero—and his occasional partner Fossyl as they cause chaos and get into all kinds of wild shenanigans in the city of Los Santos. Whether they’re stopping crime, blowing stuff up, or just being ridiculous, nothing ever goes quite as planned. With their own brand of justice (and a lot of property damage), The Offenders turn every day into a crazy adventure in a city that’s already out of control.`
+  },
+  "Boundless Conflict": {
+    color: "#6366f1",
+    description: `"Boundless Conflict" unfolds in the universe of Half-Life 2, but this time, the story is told from an entirely new perspective—that of the Combine—where we get to see the elites and other units of their empire. Rather than following the resistance, we witness the inner workings of the Combine: the orders issued, the battles fought, and the growing unrest simmering within their own ranks.
+
+As tension mounts and cracks begin to form in their once-iron grip, the Combine initiate a desperate countermeasure—the creation of the Combine Titan, engineered to reassert dominance. But their plans spiral out of control.
+
+Faced with unforeseen consequences, internal power struggles, and the sobering realization that the war may not be as one-sided as they believed, the Combine must confront a future more uncertain than ever before.`
+  },
+  "FNaF 6+": {
+    color: "#d97706",
+    description: `"FNaF 6+" follows the story of Rick where he builds up his own pizzeria from an abandoned place from the 1900's with sentient animatronics roaming around every corner.`
+  },
+  "HallowSweets": {
+    color: "#2563eb",
+    description: `HallowSweets is about a little blue haired moon angel named Sweets. Her father, known as the God of the moon, gave Sweets a little bit of his power hoping that she'd make him proud by killing all entities and confronting them. Along with her friends Tacky, Randolph, Blitzo, and the rest, they always find a way to defeat every single entity that interrupts their adventures.
+
+In short, think of it as a series with adventure, funny moments, and intense fighting with entities!`
+  },
+ "Rat & Cat Theater": {
+      color: "#2563eb",
+       description: `No story yet`
+  }
+
+};
+
 
  const overlay = document.getElementById("project-overlay");
   const content = overlay.querySelector(".project-content");
@@ -311,10 +337,303 @@
   closeBtn.addEventListener("click", () => {
     overlay.classList.add("hidden");
   });
+
+    window.addEventListener('scroll', () => {
+      const hero = document.querySelector('.hero');
+      if(hero) {
+        const offset = window.pageYOffset;
+        hero.style.backgroundPositionY = offset * 0.5 + 'px';
+      }
+    });
   </script>
 
 
 <style>
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      margin: 0; padding: 0;
+      background: linear-gradient(270deg, #1a1a1a, #2e2e2e, #1a1a1a, #4b3a2f);
+      background-size: 800% 800%;
+      animation: gradientShift 20s ease infinite;
+      color: #eee;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* --- VHS grain and scanlines --- */
+    .grain-overlay {
+      pointer-events: none;
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      opacity: 0.08;
+      mix-blend-mode: screen;
+      z-index: 9999;
+      animation: grainAnim 1s steps(10) infinite;
+    }
+
+    @keyframes grainAnim {
+      0%, 100% { background-position: 0 0; }
+      50% { background-position: 100% 100%; }
+    }
+
+    .shader-bg {
+      position: fixed;
+      top: 0; left: 0; width: 100%; height: 100%;
+      background: repeating-linear-gradient(
+        to bottom,
+        rgba(255,255,255,0.04),
+        rgba(255,255,255,0.04) 2px,
+        transparent 3px,
+        transparent 4px
+      );
+      pointer-events: none;
+      z-index: 9998;
+      mix-blend-mode: overlay;
+      animation: scanlineMove 10s linear infinite;
+    }
+
+    @keyframes scanlineMove {
+      0% { background-position: 0 0; }
+      100% { background-position: 0 100%; }
+    }
+
+    /* --- Header Glass and Nav --- */
+    header.glass {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      background: rgba(20, 20, 20, 0.7);
+      backdrop-filter: blur(10px);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0.8rem 2rem;
+      z-index: 1000;
+      box-shadow: 0 0 15px rgba(245, 158, 11, 0.6);
+    }
+
+    header.glass img {
+      filter: drop-shadow(0 0 4px #f59e0b);
+      transition: filter 0.3s ease;
+    }
+    header.glass img:hover {
+      filter: drop-shadow(0 0 12px #f59e0b);
+    }
+
+    nav a {
+      color: #f59e0b;
+      font-weight: 600;
+      margin-left: 1.5rem;
+      position: relative;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    nav a::after {
+      content: "";
+      position: absolute;
+      width: 0; height: 2px;
+      left: 0; bottom: -4px;
+      background: #f59e0b;
+      transition: width 0.3s ease;
+    }
+    nav a:hover {
+      color: #ffd25f;
+    }
+    nav a:hover::after {
+      width: 100%;
+    }
+
+    /* --- Hero Section with parallax effect --- */
+    section.hero {
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      padding: 2rem;
+      background: url('https://external-preview.redd.it/nZk3oe9XWOed73CwI6iY0OIr4v1wBkuECM_NrQBZV8g.png?format=pjpg&auto=webp&s=4a7cfa5fe4be67a4d500c27fdff0c60dabdfd100') center/cover no-repeat fixed;
+      color: #f59e0b;
+      text-shadow:
+        0 0 10px #f59e0b,
+        0 0 20px #f59e0b,
+        0 0 40px #f59e0b;
+      filter: drop-shadow(0 0 8px #f59e0b);
+      backdrop-filter: brightness(1.2);
+      border-radius: 20px;
+      box-shadow: 0 0 40px #f59e0b88 inset;
+      margin: 6rem 1rem 4rem;
+    }
+
+    .hero-content h2 {
+      font-size: 3rem;
+      animation: flickerGlow 3s infinite alternate;
+    }
+    .hero-content p {
+      font-size: 1.3rem;
+      margin: 1rem 0 2rem;
+      color: #ffd25fcc;
+    }
+
+    @keyframes flickerGlow {
+      0%, 100% {
+        text-shadow:
+          0 0 10px #f59e0b,
+          0 0 20px #f59e0b,
+          0 0 30px #ffd25f,
+          0 0 40px #ffd25f;
+        filter: brightness(1.2);
+      }
+      50% {
+        text-shadow:
+          0 0 5px #f59e0b,
+          0 0 15px #f59e0b;
+        filter: brightness(0.85);
+      }
+    }
+
+    /* --- Glow Button --- */
+    .glow-button {
+      background: linear-gradient(45deg, #f59e0b, #d97706);
+      border: none;
+      padding: 1rem 2.5rem;
+      font-weight: 700;
+      font-size: 1.1rem;
+      color: #fff;
+      border-radius: 30px;
+      cursor: pointer;
+      box-shadow:
+        0 0 10px #f59e0b,
+        0 0 20px #f59e0b;
+      transition: box-shadow 0.3s ease;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      filter: drop-shadow(0 0 6px #f59e0b);
+      user-select: none;
+    }
+    .glow-button:hover {
+      box-shadow:
+        0 0 20px #ffd25f,
+        0 0 40px #ffd25f,
+        0 0 60px #f59e0b;
+      filter: drop-shadow(0 0 12px #ffd25f);
+      transform: scale(1.05);
+      transition-duration: 0.25s;
+    }
+    .glow-button:active {
+      transform: scale(0.95);
+      box-shadow: none;
+      filter: none;
+      transition-duration: 0.1s;
+    }
+
+    /* --- Grid Section --- */
+    #grid h3 {
+      text-align: center;
+      margin-bottom: 1rem;
+      color: #f59e0b;
+      text-shadow: 0 0 8px #f59e0b;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+    }
+
+    .grid-section h4 {
+      margin-top: 2rem;
+      color: #ffd25fcc;
+      text-shadow: 0 0 5px #f59e0b;
+      font-weight: 600;
+    }
+
+    .scrolling-grid {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      padding: 0.5rem 0;
+      scroll-behavior: smooth;
+      scrollbar-width: thin;
+      scrollbar-color: #f59e0b transparent;
+    }
+    .scrolling-grid::-webkit-scrollbar {
+      height: 8px;
+    }
+    .scrolling-grid::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    .scrolling-grid::-webkit-scrollbar-thumb {
+      background-color: #f59e0b;
+      border-radius: 4px;
+    }
+
+    .grid-item {
+      min-width: 180px;
+      background: linear-gradient(135deg, #4b3a2f, #2e2e2e);
+      border-radius: 12px;
+      padding: 1rem;
+      color: #ffd25f;
+      font-weight: 700;
+      text-align: center;
+      cursor: pointer;
+      user-select: none;
+      transition:
+        box-shadow 0.3s ease,
+        transform 0.2s ease;
+      box-shadow: 0 0 10px #f59e0b55;
+    }
+    .grid-item:hover {
+      box-shadow:
+        0 0 20px #ffd25f,
+        0 0 30px #f59e0b;
+      transform: scale(1.05);
+      color: #fff;
+      text-shadow: 0 0 10px #ffd25f;
+    }
+
+    /* Individual project colors as subtle backgrounds or borders */
+    .fright { border: 2px solid #ef4444; }
+    .orange { border: 2px solid #f59e0b; }
+    .showtime { border: 2px solid #8b5cf6; }
+    .malware { border: 2px solid #3b82f6; }
+    .offenders { border: 2px solid #10b981; }
+    .fazbear { border: 2px solid #ef4444; }
+    .ratcat { border: 2px solid #2563eb; }
+    .fredbear { border: 2px solid #fbbf24; }
+    .fnaf6 { border: 2px solid #d97706; }
+    .boundless { border: 2px solid #6366f1; }
+    .hallows { border: 2px solid #2563eb; }
+    .rewritten { border: 2px solid #8b5cf6; }
+    .snakepit { border: 2px solid #10b981; }
+
+    /* --- Scroll fade-in animation --- */
+    .scroll-fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .scroll-fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* --- Footer --- */
+    footer.glass {
+      text-align: center;
+      padding: 1.2rem 2rem;
+      background: rgba(20,20,20,0.7);
+      color: #f59e0b;
+      font-weight: 600;
+      backdrop-filter: blur(10px);
+      border-top: 1px solid #f59e0b55;
+      box-shadow: 0 0 15px #f59e0b66 inset;
+      margin-top: 4rem;
+      user-select: none;
+    }
+
   .overlay {
     position: fixed;
     top: 0; left: 100%;
