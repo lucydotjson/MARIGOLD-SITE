@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marigold Cinema's</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Favicon -->
+<!-- Or use PNG -->
+<link rel="icon" href="/logo.png" type="image/png" />
+
+<!-- Basic SEO -->
+<meta name="description" content="Marigold Cinema's - Indie games and web series brought to life in cinematic gold." />
+
+<!-- Open Graph (Facebook, LinkedIn, Discord) -->
+<meta property="og:title" content="Marigold Cinema's" />
+<meta property="og:description" content="Where Indie Games and Web Series Come to Life in Cinematic Gold" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://yourdomain.com/" />
+<meta property="og:image" content="https://yourdomain.com/share-image.png" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Marigold Cinema's" />
+<meta name="twitter:description" content="Where Indie Games and Web Series Come to Life in Cinematic Gold" />
+<meta name="twitter:image" content="https://yourdomain.com/share-image.png" />
+
+
+</head>
+<body>
+  <!-- Loading Screen -->
+  <div id="loading-screen">
+    <div class="loader">
+      <span></span><span></span><span></span>
+    </div>
+  </div>
+
+  <!-- VHS Grain Overlay -->
+  <div class="shader-bg"></div>
+<div class="grain-overlay"></div>
+
+
+  <!-- Site Content -->
+  <div id="site-wrapper" style="display:none;">
+    <header class="glass">
+      <img src="logo.png" alt="Marigold Logo" style="height: 60px;" />
+      <nav>
+        <a href="#">Main Page</a>
+        <a href="#projects">Our Projects</a>
+        <a href="#work">Looking to Work With Us?</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+<div class="logo-bg"></div>
+
+    <section class="hero glass">
+      <div class="hero-content">
+        <h2>Welcome to Marigold Cinema's</h2>
+        <p>Where Indie Games and Web Series Come to Life in Cinematic Gold</p>
+        <button class="glow-button">Explore Our World</button>
+      </div>
+    </section>
+
+    <section id="grid">
+      <h3>OUR PROJECTS</h3>
+
+      <div class="grid-section">
+        <h4>Marigold Originals</h4>
+        <div class="scrolling-grid">
+          <div class="grid-item fright">Fazbear's Fright</div>
+          <div class="grid-item orange">Orange INC: Multiverse Shenanigans</div>
+          <div class="grid-item showtime">Showtime's End</div>
+          <div class="grid-item malware">Malware</div>
+          <div class="grid-item offenders">The Offenders</div>
+        </div>
+      </div>
+
+      <div class="grid-section">
+        <h4>Collabs</h4>
+        <div class="scrolling-grid">
+          <div class="grid-item fazbear">Fazbear Adventures</div>
+          <div class="grid-item ratcat">Rat & Cat Theater</div>
+          <div class="grid-item fredbear">Fredbear's Family Diner</div>
+          <div class="grid-item fnaf6">FNaF 6+</div>
+          <div class="grid-item boundless">Boundless Conflict</div>
+          <div class="grid-item hallows">HallowSweets</div>
+        </div>
+      </div>
+
+      <div class="grid-section">
+        <h4>Game Collabs</h4>
+        <div class="scrolling-grid">
+          <div class="grid-item rewritten">FNaF 2: Rewritten</div>
+          <div class="grid-item snakepit">SnakePit</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Us Section -->
+<section id="about" class="glass scroll-fade-in">
+  <h3>About Us</h3>
+  <p>
+    Marigold Cinema's is a creative studio and YouTube channel focused on bringing original indie games and web series to life. We're passionate about storytelling, world-building, and exploring new ideas through animation, gameplay, and cinematic content.
+    <br><br>
+    Our projects are made by indie creators, for indie fans — whether it's a short web series or a full game experience, we put care into every detail. We're always experimenting, collaborating, and pushing our limits to make something unique.
+    <br><br>
+    If you're into fresh, independent content with personality, you're in the right place.
+  </p>
+</section>
+
+<!-- Looking to Work With Us Section -->
+<section id="work-with-us" class="glass scroll-fade-in">
+  <h3>Looking to Work With Us?</h3>
+  <p>
+    To try and work with us, you’ll need to contact either the manager or the owner directly. After that, a document with more information will be sent to you.
+  </p>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="glass scroll-fade-in">
+  <h3>Contact</h3>
+  <p>
+    Email us at: <a href="mailto:Orangeroboticsinc@gmail.com">Orangeroboticsinc@gmail.com</a><br>
+    Or request DMs from the owner in our Discord:<br>
+    <a href="https://discord.gg/dN3XjdQJxr" target="_blank">https://discord.gg/dN3XjdQJxr</a>
+  </p>
+</section>
+
+
+    <footer class="glass">
+      <p>&copy; 2025 Marigold Cinema's. All Rights Reserved.</p>
+    </footer>
+  </div>
+
+  <!-- Scripts -->
+  <script>
+    // Loader logic
+    window.addEventListener("load", () => {
+      const loader = document.getElementById("loading-screen");
+      const site = document.getElementById("site-wrapper");
+      setTimeout(() => {
+        loader.style.display = "none";
+        site.style.display = "block";
+      }, 1500);
+    });
+
+    // Scroll reveal logic
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    });
+
+    document.querySelectorAll(".glass, .grid-item, .hero").forEach(el => {
+      el.classList.add("scroll-fade-in");
+      observer.observe(el);
+    });
+  </script>
+
+  <!-- Add this inside your <body>, after your projects grid -->
+
+<!-- Overlay container for sliding project details -->
+<div id="project-overlay" class="overlay hidden">
+  <div class="project-content">
+    <button id="close-project" class="close-btn">Close ×</button>
+    <h3 id="project-title"></h3>
+    <p id="project-description"></p>
+  </div>
+</div>
+
+<style>
+  /* Overlay slides in from right */
+  .overlay {
+    position: fixed;
+    top: 0; left: 100%;
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+    overflow-y: auto;
+    transition: left 0.4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    background: black; /* fallback in case bg color not loaded */
+  }
+
+  .overlay:not(.hidden) {
+    left: 0;
+  }
+
+  .project-content {
+    background: rgba(0, 0, 0, 0.8);
+    max-width: 600px;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow:
+      0 0 15px currentColor,
+      0 0 30px currentColor,
+      0 0 60px currentColor;
+    color: currentColor;
+    font-family: 'Poppins', monospace, monospace;
+    text-shadow:
+      0 0 5px currentColor,
+      0 0 10px currentColor,
+      0 0 20px currentColor,
+      0 0 40px currentColor;
+    animation: flicker 2s infinite alternate;
+  }
+
+  .project-content h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+  }
+
+  .project-content p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: inherit;
+    float: right;
+    cursor: pointer;
+    text-shadow: none;
+    padding: 0;
+    margin-bottom: 1rem;
+  }
+
+  /* Flickering glow animation */
+  @keyframes flicker {
+    0%, 100% {
+      text-shadow:
+        0 0 5px currentColor,
+        0 0 10px currentColor,
+        0 0 20px currentColor,
+        0 0 40px currentColor;
+      filter: brightness(1.1);
+    }
+    50% {
+      text-shadow:
+        0 0 2px currentColor,
+        0 0 4px currentColor,
+        0 0 10px currentColor,
+        0 0 20px currentColor;
+      filter: brightness(0.9);
+    }
+  }
+
+  /* Make the overlay background match the color dynamically */
+  .overlay {
+    background-color: #000; /* default */
+  }
+</style>
+<script>
+  const projects = {
+    "Fazbear's Fright": {
+      color: "#ef4444",
+      description: `Fazbear's Fright follows Nicholas Hart—Nick for short—as he takes a job working the night shift at a horror attraction built around the legends of Freddy Fazbear's Pizza. At first, it seems like just another creepy night job, but things quickly take a dark turn. Nick begins seeing strange, ghostly figures—phantoms of the old animatronics. As the nights go on, the phantoms become more intense, and Nick starts to lose his grip on reality. However, instead of breaking down completely, he slowly gets used to their presence... even if they’re not entirely harmless.`
+    },
+    "Orange INC: Multiverse Shenanigans": {
+      color: "#f59e0b",
+      description: `Orange Inc: Multiverse Shenanigans follows Ryan, Sola, and Medron as they get trapped far from home, thrown into the chaos of the multiverse. With no clear way back, the trio travels from one strange and unpredictable universe to another, each with its own weird rules, dangers, and surprises. Along the way, they face bizarre enemies, unexpected allies, and versions of themselves they never imagined. All they want is to get home—but the multiverse has other plans.`
+    },
+    "Showtime's End": {
+      color: "#8b5cf6",
+      description: `Showtime's End follows Freddy and the gang as they go about their everyday lives, putting on shows, hanging out, and just trying to enjoy their time together. On the surface, everything seems normal and lighthearted—but underneath it all, something darker is brewing. Strange events, hidden secrets, and mysterious clues begin to surface, hinting at a past none of them fully remember and a future that could change everything.`
+    },
+    Malware: {
+      color: "#3b82f6",
+      description: `Malware is set in a world where a powerful and mysterious virus has been uploaded into the systems of Freddy and the other animatronics. What starts as a normal day quickly turns into a fight for survival as the virus spreads, corrupting others and turning them hostile. Freddy and his remaining friends must escape the ruined pizzerias and flee into nearby cities, searching for safety while avoiding infection. With danger around every corner and no one they can fully trust, the group must stick together if they want to survive—and find a way to stop the virus before it consumes everything.`
+    },
+    TheOffenders: {
+      color: "#10b981",
+      description: `The Offenders follows Dog-Man—an immortal, over-the-top hero—and his occasional partner Fossyl as they cause chaos and get into all kinds of wild shenanigans in the city of Los Santos. Whether they’re stopping crime, blowing stuff up, or just being ridiculous, nothing ever goes quite as planned. With their own brand of justice (and a lot of property damage), The Offenders turn every day into a crazy adventure in a city that’s already out of control.`
+    }
+  };
+
+ const overlay = document.getElementById("project-overlay");
+  const content = overlay.querySelector(".project-content");
+  const titleEl = document.getElementById("project-title");
+  const descEl = document.getElementById("project-description");
+  const closeBtn = document.getElementById("close-project");
+
+  // Add click listeners to your project grid items (adjust selectors if needed)
+  document.querySelectorAll(".grid-item").forEach(item => {
+    item.addEventListener("click", () => {
+      const projectName = item.textContent.trim();
+      const project = projects[projectName] || projects[projectName.replace(/[:\s]/g, "")];
+
+      if (project) {
+        overlay.style.backgroundColor = project.color;
+        content.style.color = project.color; // set glow & text color
+        titleEl.textContent = projectName.toUpperCase();
+        descEl.textContent = project.description;
+        overlay.classList.remove("hidden");
+      }
+    });
+  });
+
+  closeBtn.addEventListener("click", () => {
+    overlay.classList.add("hidden");
+  });
+  </script>
+
+
+<style>
+  .overlay {
+    position: fixed;
+    top: 0; left: 100%;
+    width: 100vw;
+    height: 100vh;
+    padding: 2rem;
+    overflow-y: auto;
+    transition: left 0.4s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+
+  .overlay:not(.hidden) {
+    left: 0;
+  }
+
+  .project-content {
+    background: rgba(255 255 255 / 0.9);
+    color: #000;
+    max-width: 600px;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  }
+
+  .close-btn {
+    background: none;
+    border: none;
+    font-size: 1.25rem;
+    float: right;
+    cursor: pointer;
+  }
+
+  .grid-item {
+    cursor: pointer;
+  }
+
+  .logo-marquee {
+  display: flex;
+  gap: 2rem;
+  overflow: hidden;
+  align-items: center;
+  background: #111; /* dark background for glow */
+  padding: 1rem 0;
+  user-select: none;
+  animation: scroll-logo 15s linear infinite;
+}
+
+.logo-marquee img {
+  height: 60px;
+  filter: drop-shadow(0 0 6px #f59e0b); /* golden glow, adjust color as you like */
+  transition: filter 0.3s ease;
+}
+
+.logo-marquee img:hover {
+  filter: drop-shadow(0 0 12px #f59e0b);
+}
+
+@keyframes scroll-logo {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+</style>
+
+
+</body>
+</html>

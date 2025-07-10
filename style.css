@@ -1,0 +1,428 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background: #0f0f0f;
+  overflow-x: hidden;
+  z-index: 1;
+  
+  /* NEW: Center everything */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+  text-align: center;
+}
+
+
+.shader-bg {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #facc15 0%, #0f0f0f 70%);
+  animation: pulse 10s infinite alternate;
+  z-index: 0;
+  filter: blur(80px);
+  opacity: 0.2;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); opacity: 0.2; }
+  100% { transform: scale(1.2); opacity: 0.4; }
+}
+
+header {
+  z-index: 2;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #facc15;
+  text-shadow: 0 0 5px #facc15;
+}
+
+.hero {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  animation: fadeInUp 1.5s ease;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  animation: fadeInUp 2s ease;
+}
+
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+section {
+  max-width: 1000px;
+  width: 100%;
+  margin: 40px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+
+section h3 {
+  font-size: 2rem;
+  color: #facc15;
+  margin-bottom: 20px;
+}
+
+section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #facc15;
+}
+
+
+.grid-section h4 {
+  color: #fde68a;
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  text-shadow: 0 0 5px #facc15;
+}
+
+.scrolling-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+  overflow-x: auto;
+  padding: 20px;
+  scroll-behavior: smooth;
+}
+
+/* ==== Individual Project Styles ==== */
+.fright      { background-color: #ef4444; color: #1e1e1e; }
+.orange      { background-color: #f59e0b; color: #1e1e1e; }
+.showtime    { background-color: #8b5cf6; color: #fef3c7; }
+.malware     { background-color: #3b82f6; color: #e0f2fe; }
+.offenders   { background-color: #10b981; color: #ecfdf5; }
+
+.fazbear     { background-color: #facc15; }
+.ratcat      { background-color: #ec4899; }
+.fredbear    { background-color: #fb923c; }
+.fnaf6       { background-color: #a855f7; }
+.boundless   { background-color: #06b6d4; }
+.hallows     { background-color: #f87171; }
+
+.rewritten   { background-color: #eab308; }
+.snakepit    { background-color: #84cc16; }
+
+.grid-item:hover {
+  transform: scale(1.05) rotate(-1deg);
+  box-shadow: 0 0 20px #facc15, 0 0 40px rgba(250, 204, 21, 0.3);
+}
+
+
+@keyframes fadeInZoom {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Loading Screen */
+#loading-screen {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0e0e0e;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader span {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  background: #facc15;
+  border-radius: 50%;
+  animation: bounce 0.6s infinite alternate;
+}
+
+.loader span:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.loader span:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes bounce {
+  from { transform: translateY(0); }
+  to { transform: translateY(-20px); }
+}
+
+/* Glass effect */
+.glass {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px;
+}
+.logo-bg {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* so it won't block clicks */
+  z-index: 0; /* behind everything */
+
+  background-image: url('logo.png');
+  background-repeat: repeat;
+  background-size: 100px 100px; /* size of each tile - adjust as needed */
+  background-position: 0 0;
+
+  animation: scrollBackground 60s linear infinite;
+  opacity: 0.07; /* subtle so it doesn’t overpower content */
+  filter: drop-shadow(0 0 10px #f59e0b); /* subtle glow effect */
+}
+
+@keyframes scrollBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -200px 0; /* scroll left by two tile widths */
+  }
+}
+
+.project-content {
+  position: relative;
+  animation: pulseIn 0.6s ease forwards;
+  filter: drop-shadow(0 0 8px currentColor);
+  /* Base text style */
+  color: currentColor;
+}
+
+/* Create two colored shadow layers using pseudo elements */
+.project-content::before,
+.project-content::after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  overflow: visible;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  opacity: 0.7;
+  animation: pulseIn 0.6s ease forwards;
+}
+
+.project-content::before {
+  color: #ff0000; /* red */
+  transform: translate(-2px, 0);
+  clip-path: inset(0 0 0 0);
+  animation-delay: 0s;
+}
+
+.project-content::after {
+  color: #00ffff; /* cyan */
+  transform: translate(2px, 0);
+  clip-path: inset(0 0 0 0);
+  animation-delay: 0.1s;
+}
+
+/* Pulse In animation: scale from 0.8 to 1 and fade in */
+@keyframes pulseIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+
+/* Shader Background (animated gradient) */
+.shader-bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #f81857; /* Tailwind's orange-500 */
+  background-image: 
+    linear-gradient(0deg, rgba(255, 255, 255, 0.07) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.07) 1px, transparent 1px);
+  background-size: 40px 40px;
+  animation: scrollGrid 30s linear infinite;
+  z-index: -1;
+  opacity: 0.3;
+  pointer-events: none;
+  filter: blur(0.5px);
+}
+
+@keyframes scrollGrid {
+  0% {
+    background-position: 0 0, 0 0;
+  }
+  100% {
+    background-position: 0 1000px, 1000px 0;
+  }
+}
+
+
+@keyframes bgShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Glow Button */
+.glow-button {
+  background: transparent;
+  border: 2px solid #facc15;
+  color: #facc15;
+  padding: 10px 25px;
+  font-weight: bold;
+  border-radius: 12px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #facc15;
+}
+
+.glow-button:hover {
+  background: #facc15;
+  color: #1e1e1e;
+  box-shadow: 0 0 20px #fde047, 0 0 30px #facc15;
+  transform: scale(1.05);
+}
+
+/* Scroll Reveal Animations */
+.scroll-fade-in {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.scroll-fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ==== CRT VHS Text Flicker ==== */
+.hero-content h2,
+section h3,
+.grid-section h4 {
+  text-shadow:
+    0 0 2px #facc15,
+    1px 0 #fde047,
+    -1px 0 #f59e0b;
+  animation: crtGlitch 1.2s infinite;
+}
+
+@keyframes crtGlitch {
+  0%   { text-shadow: 1px 0 red, -1px 0 blue; }
+  20%  { text-shadow: -1px 0 red, 1px 0 blue; }
+  40%  { text-shadow: 2px 0 #fde047, -2px 0 #facc15; }
+  60%  { text-shadow: -2px 0 #fde047, 2px 0 #facc15; }
+  100% { text-shadow: 1px 0 red, -1px 0 blue; }
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 999;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.03) 0px,
+    rgba(255, 255, 255, 0.03) 1px,
+    transparent 1px,
+    transparent 4px
+  );
+  animation: scanMove 4s linear infinite;
+}
+@keyframes scanMove {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 100px; }
+}
+.grain-overlay {
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 997;
+  opacity: 0.05;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-light.png");
+  animation: grainFlicker 1s steps(4) infinite;
+  mix-blend-mode: screen;
+}
+
+@keyframes grainFlicker {
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(-1px, 1px); }
+  50% { transform: translate(1px, -1px); }
+  75% { transform: translate(0.5px, 0.5px); }
+}
+
+
