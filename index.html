@@ -45,15 +45,16 @@
   <div id="site-wrapper" style="display:none;">
     <header class="glass">
       <img src="logo.png" alt="Marigold Logo" style="height: 60px;" />
-      <nav>
-        <a href="#">Main Page</a>
-        <a href="#grid">Our Projects</a>
-        <a href="#work">Looking to Work With Us?</a>
-        <a href="#about">About Us</a>
-        <a href="#contact">Contact</a>
-        <a href="#changelog">Changelog</a>
+<nav id="nav-menu">
+  <a href="#">Main Page</a>
+  <a href="#grid">Our Projects</a>
+  <a href="#work">Looking to Work With Us?</a>
+  <a href="#about">About Us</a>
+  <a href="#contact">Contact</a>
+  <a href="#changelog">Changelog</a>
+</nav>
 
-      </nav>
+<button id="menu-toggle" class="menu-toggle">☰</button>
     </header>
 
 <div class="logo-bg"></div>
@@ -69,39 +70,25 @@
     <section id="grid">
       <h3>projects</h3>
 
-      <div class="grid-section">
-        <h4>Marigold Originals</h4>
-        <div class="scrolling-grid">
-          <div class="grid-item fright">Fazbear's Fright</div>
-          <div class="grid-item orange">Orange INC: Multiverse Shenanigans</div>
-          <div class="grid-item showtime">Showtime's End</div>
-          <div class="grid-item malware">Malware</div>
-          <div class="grid-item offenders">The Offenders</div>
-          <div class="grid-item treat">TreatMares</div>
+<div class="grid-section">
+  <h4>Marigold Originals</h4>
+  <div class="scrolling-grid">
+    <div class="grid-item fright">Fazbear's Fright</div>
+    <div class="grid-item nightshift">The Nightshift</div>
+    <div class="grid-item whitelies">White Lies, Red Truths</div>
+    <div class="grid-item happy">Happy Face</div>
+    <div class="grid-item treat">TreatMares</div>
+  </div>
+</div>
 
-        </div>
-      </div>
+<div class="grid-section">
+  <h4>Collabs</h4>
+  <div class="scrolling-grid">
+    <div class="grid-item fazbear">Fazbear Adventures</div>
+    <div class="grid-item ratcat">Rat & Cat Theater</div>
+  </div>
+</div>
 
-      <div class="grid-section">
-        <h4>Collabs</h4>
-        <div class="scrolling-grid">
-          <div class="grid-item fazbear">Fazbear Adventures</div>
-          <div class="grid-item ratcat">Rat & Cat Theater</div>
-          <div class="grid-item fnaf6">FNaF 6+</div>
-          <div class="grid-item boundless">Boundless Conflict</div>
-        </div>
-      </div>
-
-      <div class="grid-section">
-        <h4>Game Collabs</h4>
-        <div class="scrolling-grid">
-          <div class="grid-item rewritten">FNaF 2: Rewired</div>
-          <div class="grid-item snakepit">SnakePit</div>
-          <div class="grid-item blanks">Five Nights At Blank's</div>
-
-        </div>
-      </div>
-    </section>
 
     <!-- About Us Section -->
 <section id="about" class="glass scroll-fade-in">
@@ -127,7 +114,7 @@
 <section id="contact" class="glass scroll-fade-in">
   <h3>Contact</h3>
   <p>
-    Email us at: <a href="mailto:Orangeroboticsinc@gmail.com">Orangeroboticsinc@gmail.com</a><br>
+    Email us at: <a href="mailto:leemhuis.ryan@gmail.com">leemhuis.ryan@gmail.com</a><br>
     Or request DMs from the owner in our Discord:<br>
     <a href="https://discord.gg/dN3XjdQJxr" target="_blank">https://discord.gg/dN3XjdQJxr</a>
   </p>
@@ -136,16 +123,33 @@
 <!-- Changelog Section -->
 <section id="changelog" class="glass scroll-fade-in">
   <h3>Changelog</h3>
-  <ul style="text-align: left; list-style-type: square; padding-left: 1.5rem;">
-    <li> Added treatmares</li>
-    <li> Added Treatmares Info</li>
-    <li> Removed Hallowsweets</li>
-  </ul>
+<ul style="text-align: left; list-style-type: square; padding-left: 1.5rem;">
+  <li><strong>Major Update</strong></li>
+  <li>Removed Orange INC: Multiversal Shenanigans</li>
+  <li>Removed Showtime's End</li>
+  <li>Removed The Offenders</li>
+  <li>Removed Malware</li>
+  <li>Removed FNaF6+</li>
+  <li>Removed FNaF: 2 Rewired</li>
+  <li>Removed Boundless Conflict</li>
+  <li>Removed Five Nights at Blanks</li>
+  <br>
+  <li><strong>Marigold Originals</strong></li>
+  <li>Added The Nightshift</li>
+  <li>Added White Lies, Red Truths</li>
+  <li>Added Happy Face</li>
+  <br>
+  <li>Added Series Info</li>
+  <li>Fixed Website on Mobile Devices</li>
+  <li>Added Optimization</li>
+    <li>Future updates will update UI</li>
+
+</ul>
 </section>
 
 
     <footer class="glass">
-      <p>&copy; 2025 Marigold Cinema's. All Rights Reserved.</p>
+      <p>&copy; 2026 Marigold Cinema's. All Rights Reserved.</p>
     </footer>
   </div>
 
@@ -271,66 +275,72 @@
     }
   }
 
+  
+
+  
+
   /* Make the overlay background match the color dynamically */
   .overlay {
     background-color: #000; /* default */
   }
 </style>
+
 <script>
+
+  // Mobile Menu Toggle
+const menuToggle = document.getElementById("menu-toggle");
+const navMenu = document.getElementById("nav-menu");
+
+menuToggle.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+});
+
+// Close menu when clicking a link
+navMenu.querySelectorAll("a").forEach(link => {
+  link.addEventListener("click", () => {
+    navMenu.classList.remove("active");
+  });
+});
 const projects = {
+
+  "TreatMares": {
+    color: "#ff75e1",
+    description: `Treatmares is a series of comics following cute little characters through comedic moments.
+    
+Visit the Treatmares website to read more!`
+  },
+
   "Fazbear's Fright": {
     color: "#ef4444",
-    description: `Fazbear's Fright follows Nicholas Hart—Nick for short—as he takes a job working the night shift at a horror attraction built around the legends of Freddy Fazbear's Pizza. At first, it seems like just another creepy night job, but things quickly take a dark turn. Nick begins seeing strange, ghostly figures—phantoms of the old animatronics. As the nights go on, the phantoms become more intense, and Nick starts to lose his grip on reality. However, instead of breaking down completely, he slowly gets used to their presence... even if they’re not entirely harmless.`
+    description: `Join Nicholas Hart as he works the nightshift at Fazbear's Fright, a horror attraction built around the urban legends of Freddy Fazbear's Pizzeria. As the nights go on, Nick soon realizes this place has mysteries of its own.`
   },
-  "Orange INC: Multiverse Shenanigans": {
+
+  "The Nightshift": {
+    color: "#22c55e",
+    description: `Follow Felix Connors as he works the graveyard shift at different Fazbear Entertainment franchises and locations in a found footage style series.`
+  },
+
+  "Happy Face": {
+    color: "#facc15",
+    description: `More in the future.`
+  },
+
+  "White Lies, Red Truths": {
+    color: "#dc2626",
+    description: `More in the future.`
+  },
+
+  "Fazbear Adventures": {
     color: "#f59e0b",
-    description: `Orange Inc: Multiverse Shenanigans follows Ryan, Sola, and Medron as they get trapped far from home, thrown into the chaos of the multiverse. With no clear way back, the trio travels from one strange and unpredictable universe to another, each with its own weird rules, dangers, and surprises. Along the way, they face bizarre enemies, unexpected allies, and versions of themselves they never imagined. All they want is to get home—but the multiverse has other plans.`
+    description: `Follow Freddy and his gang as they experience wacky adventures that almost always lead into chaos, arguments, and disasters.`
   },
-  "Showtime's End": {
-    color: "#8b5cf6",
-    description: `Showtime's End follows Freddy and the gang as they go about their everyday lives, putting on shows, hanging out, and just trying to enjoy their time together. On the surface, everything seems normal and lighthearted—but underneath it all, something darker is brewing. Strange events, hidden secrets, and mysterious clues begin to surface, hinting at a past none of them fully remember and a future that could change everything.`
-  },
-  Malware: {
-    color: "#3b82f6",
-    description: `Malware is set in a world where a powerful and mysterious virus has been uploaded into the systems of Freddy and the other animatronics. What starts as a normal day quickly turns into a fight for survival as the virus spreads, corrupting others and turning them hostile. Freddy and his remaining friends must escape the ruined pizzerias and flee into nearby cities, searching for safety while avoiding infection. With danger around every corner and no one they can fully trust, the group must stick together if they want to survive—and find a way to stop the virus before it consumes everything.`
-  },
-  TheOffenders: {
-    color: "#10b981",
-    description: `The Offenders follows Dog-Man—an immortal, over-the-top hero—and his occasional partner Fossyl as they cause chaos and get into all kinds of wild shenanigans in the city of Los Santos. Whether they’re stopping crime, blowing stuff up, or just being ridiculous, nothing ever goes quite as planned. With their own brand of justice (and a lot of property damage), The Offenders turn every day into a crazy adventure in a city that’s already out of control.`
-  },
-  "Boundless Conflict": {
-    color: "#6366f1",
-    description: `"Boundless Conflict" unfolds in the universe of Half-Life 2, but this time, the story is told from an entirely new perspective—that of the Combine—where we get to see the elites and other units of their empire. Rather than following the resistance, we witness the inner workings of the Combine: the orders issued, the battles fought, and the growing unrest simmering within their own ranks.
 
-As tension mounts and cracks begin to form in their once-iron grip, the Combine initiate a desperate countermeasure—the creation of the Combine Titan, engineered to reassert dominance. But their plans spiral out of control.
-
-Faced with unforeseen consequences, internal power struggles, and the sobering realization that the war may not be as one-sided as they believed, the Combine must confront a future more uncertain than ever before.`
-  },
-  "FNaF 6+": {
-    color: "#d97706",
-    description: `"FNaF 6+" follows the story of Rick where he builds up his own pizzeria from an abandoned place from the 1900's with sentient animatronics roaming around every corner.`
-  },
- "Rat & Cat Theater": {
-      color: "#2563eb",
-       description: `No story yet`
-  }, 
-
-"Five Nights At Blank's": {
-      color: "#2563eb",
-       description: `Five Nights at Blank's is a fangame of Five Nights at Candy's - just an unofficial prequel - about a guy getting a job as a night watchman to a dinner being worked on. but... something is off…`
-  },
-"FNaF 2: Rewired": {
-      color: "#2563eb",
-       description: `FNaF 2: Rewired is a reimagining of the original game, set in an alternate timeline with entirely new events. It features brand-new gameplay mechanics, a completely redesigned pizzeria layout, and fresh designs for every character.`
-  },
-  
-"TreatMares": {
-      color: "#ff75e1",
-       description: `no story yet`
+  "Rat & Cat Theater": {
+    color: "#2563eb",
+    description: `Rat & Cat Theater takes place in the late 2020's in a refurbished version of the original Rat & Cat Theater from the 60's where various tragedies from the past took place.`
   }
-  
-};
 
+};
 
  const overlay = document.getElementById("project-overlay");
   const content = overlay.querySelector(".project-content");
@@ -347,6 +357,10 @@ document.querySelectorAll(".grid-item").forEach(item => {
       window.open("https://lucydotjson.github.io/snakepit-concept-site/", "_blank"); 
       return;
     }
+    if (projectName === "TreatMares") {
+  window.open("https://lucydotjson.github.io/Treatmares-comic-site/", "_blank");
+  return;
+}
 
     const project = projects[projectName] || projects[projectName.replace(/[:\s]/g, "")];
 
@@ -397,15 +411,10 @@ document.querySelectorAll(".grid-item").forEach(item => {
     }
 
     /* --- VHS grain and scanlines --- */
-    .grain-overlay {
-      pointer-events: none;
-      position: fixed;
-      top: 0; left: 0; width: 100%; height: 100%;
-      opacity: 0.08;
-      mix-blend-mode: screen;
-      z-index: 9999;
-      animation: grainAnim 1s steps(10) infinite;
-    }
+.grain-overlay {
+  opacity: 0.05;
+  animation: grainAnim 2s steps(6) infinite;
+}
 
     @keyframes grainAnim {
       0%, 100% { background-position: 0 0; }
@@ -650,6 +659,9 @@ section.hero::before {
     .rewritten { border: 2px solid #1f5d50; }
     .snakepit { border: 2px solid #10b981; }
     .blanks { border: 2px solid #ffffff; }
+    .nightshift { border: 2px solid #22c55e; }
+.whitelies { border: 2px solid #dc2626; }
+.happy { border: 2px solid #facc15; }
 
 
     /* --- Scroll fade-in animation --- */
@@ -744,6 +756,91 @@ section.hero::before {
   100% {
     transform: translateX(-33.333%);
   }
+}
+
+/* ============================= */
+/* MOBILE OPTIMIZATION */
+/* ============================= */
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #f59e0b;
+  cursor: pointer;
+}
+
+/* Tablet & Mobile */
+@media (max-width: 900px) {
+
+  header.glass {
+    padding: 0.8rem 1rem;
+  }
+
+  nav {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 260px;
+    background: rgba(15,15,15,0.95);
+    backdrop-filter: blur(12px);
+    display: flex;
+    flex-direction: column;
+    padding-top: 6rem;
+    gap: 1.5rem;
+    transition: right 0.4s ease;
+    box-shadow: -10px 0 40px #000;
+  }
+
+  nav.active {
+    right: 0;
+  }
+
+  nav a {
+    margin-left: 0;
+    padding-left: 2rem;
+    font-size: 1.1rem;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Hero adjustments */
+  section.hero {
+    min-height: 70vh;
+    margin: 5rem 1rem 2rem;
+    padding: 1.5rem;
+  }
+
+  .hero-content h2 {
+    font-size: 2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  /* Grid improvements */
+  .grid-item {
+    min-width: 150px;
+    font-size: 0.9rem;
+  }
+
+  /* About / text spacing */
+  section.glass {
+    margin: 2rem 1rem;
+    padding: 1.5rem;
+  }
+
+  /* Overlay fix */
+  .project-content {
+    max-width: 90%;
+    font-size: 0.95rem;
+  }
+
 }
 
 </style>
