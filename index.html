@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marigold Cinema's</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <!-- Favicon -->
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+<!-- Or use PNG -->
+
+<!-- Basic SEO -->
+<meta name="description" content="Marigold Cinema's - Indie games and web series brought to life in cinematic gold." />
+
+<!-- Open Graph (Facebook, LinkedIn, Discord) -->
+<meta property="og:title" content="Marigold Cinema's" />
+<meta property="og:description" content="Where Indie Games and Web Series Come to Life in Cinematic Gold" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://lucydotjson.github.io/MARIGOLD-SITE/" />
+<meta property="og:image" content="https://lucydotjson.github.io/MARIGOLD-SITE/share-image.png" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Marigold Cinema's" />
+<meta name="twitter:description" content="Where Indie Games and Web Series Come to Life in Cinematic Gold" />
+<meta name="twitter:image" content="https://lucydotjson.github.io/MARIGOLD-SITE/share-image.png" />
+  
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@400;600;700&display=swap');
 
@@ -100,6 +125,27 @@ header {
 
 .star-decoration { color: #f5c842; font-size: 0.8em; margin: 0 4px; animation: twinkle 2s ease-in-out infinite; }
 @keyframes twinkle { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.7)} }
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo-text {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 1.2rem;
+  color: #f5c842;
+  letter-spacing: 0.1em;
+}
+
+.logo-img {
+  height: 28px; /* smaller size */
+  width: auto;
+  display: block;
+  filter: drop-shadow(0 0 8px rgba(245,200,66,0.5));
+}
 
 nav a {
   color: rgba(245,200,66,0.8);
@@ -548,11 +594,10 @@ footer p {
 
 <!-- HEADER -->
 <header>
-  <div class="header-logo">
-    <span class="star-decoration">★</span>
-    Marigold Cinema's
-    <span class="star-decoration">★</span>
-  </div>
+<div class="header-logo">
+  <img src="logo.png" alt="Marigold Logo" class="logo-img">
+  <span class="logo-text">Marigold Cinema's</span>
+</div>
   <nav>
     <a href="#grid">Projects</a>
     <a href="#work">Work With Us</a>
@@ -743,7 +788,7 @@ const PROJECTS = {
   },
   "White Lies, Red Truths": {
     color: "#dc2626",
-    desc: "More information coming in the future. Stay tuned."
+    desc: "Listen to voice recordings left behind during a zombie infestation. Not all recordings are in order it's up to you, the listener, to piece together the story."
   },
   "Happy Face": {
     color: "#facc15",
