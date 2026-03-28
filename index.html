@@ -1,850 +1,795 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Marigold Cinema's</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <!-- Favicon -->
-<link rel="icon" href="favicon.ico" type="image/x-icon" />
-<!-- Or use PNG -->
-
-<!-- Basic SEO -->
-<meta name="description" content="Marigold Cinema's - Indie games and web series brought to life in cinematic gold." />
-
-<!-- Open Graph (Facebook, LinkedIn, Discord) -->
-<meta property="og:title" content="Marigold Cinema's" />
-<meta property="og:description" content="Where Indie Games and Web Series Come to Life in Cinematic Gold" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://lucydotjson.github.io/MARIGOLD-SITE/" />
-<meta property="og:image" content="https://lucydotjson.github.io/MARIGOLD-SITE/share-image.png" />
-
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Marigold Cinema's" />
-<meta name="twitter:description" content="Where Indie Games and Web Series Come to Life in Cinematic Gold" />
-<meta name="twitter:image" content="https://lucydotjson.github.io/MARIGOLD-SITE/share-image.png" />
-
-
-</head>
-<body>
-  <!-- Loading Screen -->
-  <div id="loading-screen">
-    <div class="loader">
-      <span></span><span></span><span></span>
-    </div>
-  </div>
-
-  <!-- VHS Grain Overlay -->
-  <div class="shader-bg"></div>
-<div class="grain-overlay"></div>
-
-
-  <!-- Site Content -->
-  <div id="site-wrapper" style="display:none;">
-    <header class="glass">
-      <img src="logo.png" alt="Marigold Logo" style="height: 60px;" />
-<nav id="nav-menu">
-  <a href="#">Main Page</a>
-  <a href="#grid">Our Projects</a>
-  <a href="#work">Looking to Work With Us?</a>
-  <a href="#about">About Us</a>
-  <a href="#contact">Contact</a>
-  <a href="#changelog">Changelog</a>
-</nav>
-
-<button id="menu-toggle" class="menu-toggle">☰</button>
-    </header>
-
-<div class="logo-bg"></div>
-
-    <section class="hero glass">
-      <div class="hero-content">
-        <h2>Welcome to Marigold Cinema's</h2>
-        <p>Where Indie Games and Web Series Come to Life in Cinematic Gold</p>
-        <button class="glow-button">Explore Our World</button>
-      </div>
-    </section>
-
-    <section id="grid">
-      <h3>projects</h3>
-
-<div class="grid-section">
-  <h4>Marigold Originals</h4>
-  <div class="scrolling-grid">
-    <div class="grid-item fright">Fazbear's Fright</div>
-    <div class="grid-item nightshift">The Nightshift</div>
-    <div class="grid-item whitelies">White Lies, Red Truths</div>
-    <div class="grid-item happy">Happy Face</div>
-    <div class="grid-item treat">TreatMares</div>
-  </div>
-</div>
-
-<div class="grid-section">
-  <h4>Collabs</h4>
-  <div class="scrolling-grid">
-    <div class="grid-item fazbear">Fazbear Adventures</div>
-    <div class="grid-item ratcat">Rat & Cat Theater</div>
-  </div>
-</div>
-
-
-    <!-- About Us Section -->
-<section id="about" class="glass scroll-fade-in">
-  <h3>About Us</h3>
-  <p>
-    Marigold Cinema's is a creative studio and YouTube channel focused on bringing original indie games and web series to life. We're passionate about storytelling, world-building, and exploring new ideas through animation, gameplay, and cinematic content.
-    <br><br>
-    Our projects are made by indie creators, for indie fans — whether it's a short web series or a full game experience, we put care into every detail. We're always experimenting, collaborating, and pushing our limits to make something unique.
-    <br><br>
-    If you're into fresh, independent content with personality, you're in the right place.
-  </p>
-</section>
-
-<!-- Looking to Work With Us Section -->
-<section id="work" class="glass scroll-fade-in">
-  <h3>Looking to Work With Us?</h3>
-  <p>
-    To try and work with us, you’ll need to contact either the manager or the owner directly. After that, a document with more information will be sent to you.
-  </p>
-</section>
-
-<!-- Contact Section -->
-<section id="contact" class="glass scroll-fade-in">
-  <h3>Contact</h3>
-  <p>
-    Email us at: <a href="mailto:leemhuis.ryan@gmail.com">leemhuis.ryan@gmail.com</a><br>
-    Or request DMs from the owner in our Discord:<br>
-    <a href="https://discord.gg/dN3XjdQJxr" target="_blank">https://discord.gg/dN3XjdQJxr</a>
-  </p>
-</section>
-
-<!-- Changelog Section -->
-<section id="changelog" class="glass scroll-fade-in">
-  <h3>Changelog</h3>
-<ul style="text-align: left; list-style-type: square; padding-left: 1.5rem;">
-  <li><strong>Major Update</strong></li>
-  <li>Removed Orange INC: Multiversal Shenanigans</li>
-  <li>Removed Showtime's End</li>
-  <li>Removed The Offenders</li>
-  <li>Removed Malware</li>
-  <li>Removed FNaF6+</li>
-  <li>Removed FNaF: 2 Rewired</li>
-  <li>Removed Boundless Conflict</li>
-  <li>Removed Five Nights at Blanks</li>
-  <br>
-  <li><strong>Marigold Originals</strong></li>
-  <li>Added The Nightshift</li>
-  <li>Added White Lies, Red Truths</li>
-  <li>Added Happy Face</li>
-  <br>
-  <li>Added Series Info</li>
-  <li>Fixed Website on Mobile Devices</li>
-  <li>Added Optimization</li>
-    <li>Future updates will update UI</li>
-
-</ul>
-</section>
-
-
-    <footer class="glass">
-      <p>&copy; 2026 Marigold Cinema's. All Rights Reserved.</p>
-    </footer>
-  </div>
-
-  <!-- Scripts -->
-  <script>
-    // Loader logic
-    window.addEventListener("load", () => {
-      const loader = document.getElementById("loading-screen");
-      const site = document.getElementById("site-wrapper");
-      setTimeout(() => {
-        loader.style.display = "none";
-        site.style.display = "block";
-      }, 1500);
-    });
-
-    // Scroll reveal logic
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("visible");
-        }
-      });
-    });
-
-    document.querySelectorAll(".glass, .grid-item, .hero").forEach(el => {
-      el.classList.add("scroll-fade-in");
-      observer.observe(el);
-    });
-  </script>
-
-  <!-- Add this inside your <body>, after your projects grid -->
-
-<!-- Overlay container for sliding project details -->
-<div id="project-overlay" class="overlay hidden">
-  <div class="project-content">
-    <button id="close-project" class="close-btn">Close ×</button>
-    <h3 id="project-title"></h3>
-    <p id="project-description"></p>
-  </div>
-</div>
-
 <style>
-  /* Overlay slides in from right */
-  .overlay {
-    position: fixed;
-    top: 0; left: 100%;
-    width: 100vw;
-    height: 100vh;
-    padding: 2rem;
-    overflow-y: auto;
-    transition: left 0.4s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-    background: black; /* fallback in case bg color not loaded */
-  }
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Poppins:wght@400;600;700&display=swap');
 
-  .overlay:not(.hidden) {
-    left: 0;
-  }
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  .project-content {
-    background: rgba(0, 0, 0, 0.8);
-    max-width: 600px;
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow:
-      0 0 15px currentColor,
-      0 0 30px currentColor,
-      0 0 60px currentColor;
-    color: currentColor;
-    font-family: 'Poppins', monospace, monospace;
-    text-shadow:
-      0 0 5px currentColor,
-      0 0 10px currentColor,
-      0 0 20px currentColor,
-      0 0 40px currentColor;
-    animation: flicker 2s infinite alternate;
-  }
-
-  .project-content h3 {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.2em;
-  }
-
-  .project-content p {
-    font-size: 1.1rem;
-    line-height: 1.6;
-  }
-
-  .close-btn {
-    background: none;
-    border: none;
-    font-size: 1.5rem;
-    color: inherit;
-    float: right;
-    cursor: pointer;
-    text-shadow: none;
-    padding: 0;
-    margin-bottom: 1rem;
-  }
-
-  /* Flickering glow animation */
-  @keyframes flicker {
-    0%, 100% {
-      text-shadow:
-        0 0 5px currentColor,
-        0 0 10px currentColor,
-        0 0 20px currentColor,
-        0 0 40px currentColor;
-      filter: brightness(1.1);
-    }
-    50% {
-      text-shadow:
-        0 0 2px currentColor,
-        0 0 4px currentColor,
-        0 0 10px currentColor,
-        0 0 20px currentColor;
-      filter: brightness(0.9);
-    }
-  }
-
-  
-
-  
-
-  /* Make the overlay background match the color dynamically */
-  .overlay {
-    background-color: #000; /* default */
-  }
-</style>
-
-<script>
-
-  // Mobile Menu Toggle
-const menuToggle = document.getElementById("menu-toggle");
-const navMenu = document.getElementById("nav-menu");
-
-menuToggle.addEventListener("click", () => {
-  navMenu.classList.toggle("active");
-});
-
-// Close menu when clicking a link
-navMenu.querySelectorAll("a").forEach(link => {
-  link.addEventListener("click", () => {
-    navMenu.classList.remove("active");
-  });
-});
-const projects = {
-
-  "TreatMares": {
-    color: "#ff75e1",
-    description: `Treatmares is a series of comics following cute little characters through comedic moments.
-    
-Visit the Treatmares website to read more!`
-  },
-
-  "Fazbear's Fright": {
-    color: "#ef4444",
-    description: `Join Nicholas Hart as he works the nightshift at Fazbear's Fright, a horror attraction built around the urban legends of Freddy Fazbear's Pizzeria. As the nights go on, Nick soon realizes this place has mysteries of its own.`
-  },
-
-  "The Nightshift": {
-    color: "#22c55e",
-    description: `Follow Felix Connors as he works the graveyard shift at different Fazbear Entertainment franchises and locations in a found footage style series.`
-  },
-
-  "Happy Face": {
-    color: "#facc15",
-    description: `More in the future.`
-  },
-
-  "White Lies, Red Truths": {
-    color: "#dc2626",
-    description: `More in the future.`
-  },
-
-  "Fazbear Adventures": {
-    color: "#f59e0b",
-    description: `Follow Freddy and his gang as they experience wacky adventures that almost always lead into chaos, arguments, and disasters.`
-  },
-
-  "Rat & Cat Theater": {
-    color: "#2563eb",
-    description: `Rat & Cat Theater takes place in the late 2020's in a refurbished version of the original Rat & Cat Theater from the 60's where various tragedies from the past took place.`
-  }
-
-};
-
- const overlay = document.getElementById("project-overlay");
-  const content = overlay.querySelector(".project-content");
-  const titleEl = document.getElementById("project-title");
-  const descEl = document.getElementById("project-description");
-  const closeBtn = document.getElementById("close-project");
-
-  // Add click listeners to your project grid items (adjust selectors if needed)
-document.querySelectorAll(".grid-item").forEach(item => {
-  item.addEventListener("click", () => {
-    const projectName = item.textContent.trim();
-
-    if (projectName === "SnakePit") {
-      window.open("https://lucydotjson.github.io/snakepit-concept-site/", "_blank"); 
-      return;
-    }
-    if (projectName === "TreatMares") {
-  window.open("https://lucydotjson.github.io/Treatmares-comic-site/", "_blank");
-  return;
+body {
+  background: #0a0005;
+  color: #f0e6c8;
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
 }
 
-    const project = projects[projectName] || projects[projectName.replace(/[:\s]/g, "")];
+/* ─── MARQUEE BORDER ─── */
+.marquee-border {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  z-index: 9999;
+}
+.marquee-border::before,
+.marquee-border::after {
+  content: '';
+  position: absolute;
+  background: repeating-linear-gradient(90deg, #f5c842 0px, #f5c842 8px, transparent 8px, transparent 18px);
+}
+.marquee-border::before { top: 0; left: 0; right: 0; height: 6px; animation: marqH 2s linear infinite; }
+.marquee-border::after  { bottom: 0; left: 0; right: 0; height: 6px; animation: marqH 2s linear infinite reverse; }
+@keyframes marqH { to { background-position: 26px 0; } }
 
-    if (project) {
-      overlay.style.backgroundColor = project.color;
-      content.style.color = project.color; // set glow & text color
-      titleEl.textContent = projectName.toUpperCase();
-      descEl.textContent = project.description;
-      overlay.classList.remove("hidden");
-    }
-  });
-});
+.marquee-side {
+  position: fixed;
+  top: 0; bottom: 0;
+  width: 6px;
+  background: repeating-linear-gradient(180deg, #f5c842 0px, #f5c842 8px, transparent 8px, transparent 18px);
+  animation: marqV 2s linear infinite;
+  pointer-events: none;
+  z-index: 9999;
+}
+.marquee-side.left  { left: 0; }
+.marquee-side.right { right: 0; animation-direction: reverse; }
+@keyframes marqV { to { background-position: 0 26px; } }
 
-
-  closeBtn.addEventListener("click", () => {
-    overlay.classList.add("hidden");
-  });
-
-    window.addEventListener('scroll', () => {
-      const hero = document.querySelector('.hero');
-      if(hero) {
-        const offset = window.pageYOffset;
-        hero.style.backgroundPositionY = offset * 0.5 + 'px';
-      }
-    });
-
-    
-  </script>
-
-
-<style>
-
-    body {
-      font-family: 'Poppins', sans-serif;
-      margin: 0; padding: 0;
-      background: linear-gradient(270deg, #1a1a1a, #2e2e2e, #1a1a1a, #4b3a2f);
-      background-size: 800% 800%;
-      animation: gradientShift 20s ease infinite;
-      color: #eee;
-      overflow-x: hidden;
-      scroll-behavior: smooth;
-    }
-
-    @keyframes gradientShift {
-      0% { background-position: 0% 50%; }
-      50% { background-position: 100% 50%; }
-      100% { background-position: 0% 50%; }
-    }
-
-    /* --- VHS grain and scanlines --- */
-.grain-overlay {
-  opacity: 0.05;
-  animation: grainAnim 2s steps(6) infinite;
+/* ─── CURTAIN BG ─── */
+.curtain-bg {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  pointer-events: none;
+  z-index: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 50% -10%, #3a0030 0%, transparent 60%),
+    radial-gradient(ellipse 30% 80% at 2% 50%, #2a001e 0%, transparent 50%),
+    radial-gradient(ellipse 30% 80% at 98% 50%, #2a001e 0%, transparent 50%),
+    #0a0005;
 }
 
-    @keyframes grainAnim {
-      0%, 100% { background-position: 0 0; }
-      50% { background-position: 100% 100%; }
-    }
-
-    .shader-bg {
-      position: fixed;
-      top: 0; left: 0; width: 100%; height: 100%;
-      background: repeating-linear-gradient(
-        to bottom,
-        rgba(255,255,255,0.04),
-        rgba(255,255,255,0.04) 2px,
-        transparent 3px,
-        transparent 4px
-      );
-      pointer-events: none;
-      z-index: 9998;
-      mix-blend-mode: overlay;
-      animation: scanlineMove 10s linear infinite;
-    }
-
-    @keyframes scanlineMove {
-      0% { background-position: 0 0; }
-      100% { background-position: 0 100%; }
-    }
-
-    /* --- Header Glass and Nav --- */
-    header.glass {
-      position: fixed;
-      top: 0; left: 0; right: 0;
-      background: rgba(20, 20, 20, 0.7);
-      backdrop-filter: blur(10px);
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0.8rem 2rem;
-      z-index: 1000;
-      box-shadow: 0 0 15px rgba(245, 158, 11, 0.6);
-    }
-
-    header.glass img {
-      filter: drop-shadow(0 0 4px #f59e0b);
-      transition: filter 0.3s ease;
-    }
-    header.glass img:hover {
-      filter: drop-shadow(0 0 12px #f59e0b);
-    }
-
-    nav a {
-      color: #f59e0b;
-      font-weight: 600;
-      margin-left: 1.5rem;
-      position: relative;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-    nav a::after {
-      content: "";
-      position: absolute;
-      width: 0; height: 2px;
-      left: 0; bottom: -4px;
-      background: #f59e0b;
-      transition: width 0.3s ease;
-    }
-    nav a:hover {
-      color: #ffd25f;
-    }
-    nav a:hover::after {
-      width: 100%;
-    }
-
-    /* --- Hero Section with parallax effect --- */
-section.hero {
-  position: relative;
-  overflow: hidden;
+/* ─── SPOTLIGHT ─── */
+.spotlight {
+  position: fixed;
+  top: -200px;
+  width: 320px;
+  height: 700px;
+  background: conic-gradient(from -6deg at 50% 0%, transparent 0deg, rgba(255,230,100,0.07) 6deg, rgba(255,230,100,0.10) 12deg, rgba(255,230,100,0.07) 18deg, transparent 24deg);
+  pointer-events: none;
   z-index: 1;
-  /* existing styles */
-  min-height: 80vh;
+  animation: spotSweep 8s ease-in-out infinite alternate;
+}
+.spotlight.left  { left: 5%; animation-delay: 0s; }
+.spotlight.right { right: 5%; animation-delay: 4s; }
+@keyframes spotSweep {
+  0%   { transform: rotate(-15deg); opacity: 0.6; }
+  100% { transform: rotate(15deg);  opacity: 1; }
+}
+
+/* ─── HEADER ─── */
+header {
+  position: fixed;
+  top: 6px; left: 6px; right: 6px;
+  z-index: 1000;
   display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 2.5rem;
+  background: rgba(10, 0, 5, 0.85);
+  border-bottom: 1px solid rgba(245, 200, 66, 0.35);
+  backdrop-filter: blur(12px);
+}
+
+.header-logo {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: 1.4rem;
+  color: #f5c842;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 20px rgba(245,200,66,0.6), 0 0 40px rgba(245,200,66,0.3);
+  text-transform: uppercase;
+}
+
+.star-decoration { color: #f5c842; font-size: 0.8em; margin: 0 4px; animation: twinkle 2s ease-in-out infinite; }
+@keyframes twinkle { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.7)} }
+
+nav a {
+  color: rgba(245,200,66,0.8);
+  text-decoration: none;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-left: 2rem;
+  transition: color 0.2s, text-shadow 0.2s;
+}
+nav a:hover { color: #fff; text-shadow: 0 0 10px rgba(255,255,255,0.6); }
+
+/* ─── HERO ─── */
+.hero {
+  position: relative;
+  z-index: 2;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 2rem;
-  color: #feffab;
-  text-shadow:
-    0 0 10px #f59e0b,
-    0 0 20px #f59e0b,
-    0 0 40px #f59e0b;
-  filter: drop-shadow(0 0 8px #feffab);
-  backdrop-filter: brightness(1.2);
-  border-radius: 20px;
-  box-shadow: 0 0 40px #f59e0b88 inset;
-  margin: 6rem 1rem 4rem;
+  padding: 2rem 1rem;
 }
 
-section.hero::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-  background: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTILmr2Lo98mSwTG-9UN8tuBtmM-1gJnJZAjg&s') center/cover no-repeat fixed;
-  opacity: 0.2; /* Adjust transparency here */
-  z-index: -1;
-}
-
-
-    .hero-content h2 {
-      font-size: 3rem;
-      animation: flickerGlow 3s infinite alternate;
-    }
-    .hero-content p {
-      font-size: 1.3rem;
-      margin: 1rem 0 2rem;
-      color: #ffd25fcc;
-    }
-
-    @keyframes flickerGlow {
-      0%, 100% {
-        text-shadow:
-          0 0 10px #f59e0b,
-          0 0 20px #f59e0b,
-          0 0 30px #ffd25f,
-          0 0 40px #ffd25f;
-        filter: brightness(1.2);
-      }
-      50% {
-        text-shadow:
-          0 0 5px #f59e0b,
-          0 0 15px #f59e0b;
-        filter: brightness(0.85);
-      }
-    }
-
-    /* --- Glow Button --- */
-    .glow-button {
-      background: linear-gradient(45deg, #f59e0b, #d97706);
-      border: none;
-      padding: 1rem 2.5rem;
-      font-weight: 700;
-      font-size: 1.1rem;
-      color: #fff;
-      border-radius: 30px;
-      cursor: pointer;
-      box-shadow:
-        0 0 10px #f59e0b,
-        0 0 20px #f59e0b;
-      transition: box-shadow 0.3s ease;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      filter: drop-shadow(0 0 6px #f59e0b);
-      user-select: none;
-    }
-    .glow-button:hover {
-      box-shadow:
-        0 0 20px #ffd25f,
-        0 0 40px #ffd25f,
-        0 0 60px #f59e0b;
-      filter: drop-shadow(0 0 12px #ffd25f);
-      transform: scale(1.05);
-      transition-duration: 0.25s;
-    }
-    .glow-button:active {
-      transform: scale(0.95);
-      box-shadow: none;
-      filter: none;
-      transition-duration: 0.1s;
-    }
-
-    /* --- Grid Section --- */
-    #grid h3 {
-      text-align: center;
-      margin-bottom: 1rem;
-      color: #f59e0b;
-      text-shadow: 0 0 8px #f59e0b;
-      font-weight: 700;
-      letter-spacing: 0.2em;
-    }
-
-    .grid-section h4 {
-      margin-top: 2rem;
-      color: #ffd25fcc;
-      text-shadow: 0 0 5px #f59e0b;
-      font-weight: 600;
-    }
-
-    .scrolling-grid {
-      display: flex;
-      overflow-x: auto;
-      gap: 1rem;
-      padding: 0.5rem 0;
-      scroll-behavior: smooth;
-      scrollbar-width: thin;
-      scrollbar-color: #f59e0b transparent;
-    }
-    .scrolling-grid::-webkit-scrollbar {
-      height: 8px;
-    }
-    .scrolling-grid::-webkit-scrollbar-track {
-      background: transparent;
-    }
-    .scrolling-grid::-webkit-scrollbar-thumb {
-      background-color: #f59e0b;
-      border-radius: 4px;
-    }
-
-    .grid-item {
-      min-width: 180px;
-      background: linear-gradient(135deg, #4b3a2f, #2e2e2e);
-      border-radius: 12px;
-      padding: 1rem;
-      color: #ffd25f;
-      font-weight: 700;
-      text-align: center;
-      cursor: pointer;
-      user-select: none;
-      transition:
-        box-shadow 0.3s ease,
-        transform 0.2s ease;
-      box-shadow: 0 0 10px #f59e0b55;
-    }
-    .grid-item:hover {
-      box-shadow:
-        0 0 20px #ffd25f,
-        0 0 30px #f59e0b;
-      transform: scale(1.05);
-      color: #fff;
-      text-shadow: 0 0 10px #ffd25f;
-    }
-
-    /* Individual project colors as subtle backgrounds or borders */
-    .fright { border: 2px solid #ef4444; }
-    .orange { border: 2px solid #f59e0b; }
-    .showtime { border: 2px solid #8b5cf6; }
-    .malware { border: 2px solid #3b82f6; }
-    .offenders { border: 2px solid #10b981; }
-     .treat { border: 2px solid #ff75e1; }
-    .fazbear { border: 2px solid #ef4444; }
-    .ratcat { border: 2px solid #2563eb; }
-    .fnaf6 { border: 2px solid #d97706; }
-    .boundless { border: 2px solid #6366f1; }
-    .rewritten { border: 2px solid #1f5d50; }
-    .snakepit { border: 2px solid #10b981; }
-    .blanks { border: 2px solid #ffffff; }
-    .nightshift { border: 2px solid #22c55e; }
-.whitelies { border: 2px solid #dc2626; }
-.happy { border: 2px solid #facc15; }
-
-
-    /* --- Scroll fade-in animation --- */
-    .scroll-fade-in {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.8s ease, transform 0.8s ease;
-    }
-    .scroll-fade-in.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-
-    /* --- Footer --- */
-    footer.glass {
-      text-align: center;
-      padding: 1.2rem 2rem;
-      background: rgba(20,20,20,0.7);
-      color: #f59e0b;
-      font-weight: 600;
-      backdrop-filter: blur(10px);
-      border-top: 1px solid #f59e0b55;
-      box-shadow: 0 0 15px #f59e0b66 inset;
-      margin-top: 4rem;
-      user-select: none;
-    }
-
-  .overlay {
-    position: fixed;
-    top: 0; left: 100%;
-    width: 100vw;
-    height: 100vh;
-    padding: 2rem;
-    overflow-y: auto;
-    transition: left 0.4s ease;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 1000;
-  }
-
-  .overlay:not(.hidden) {
-    left: 0;
-  }
-
-  .project-content {
-    background: rgba(255 255 255 / 0.9);
-    color: #000;
-    max-width: 600px;
-    padding: 1.5rem;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
-  }
-
-  .close-btn {
-    background: none;
-    border: none;
-    font-size: 1.25rem;
-    float: right;
-    cursor: pointer;
-  }
-
-  .grid-item {
-    cursor: pointer;
-  }
-
-  .logo-marquee {
-  display: flex;
-  gap: 2rem;
-  overflow: hidden;
+.award-badge {
+  display: inline-flex;
   align-items: center;
-  background: #111; /* dark background for glow */
-  padding: 1rem 0;
-  user-select: none;
-  animation: scroll-logo 15s linear infinite;
+  gap: 8px;
+  background: rgba(245,200,66,0.12);
+  border: 1px solid rgba(245,200,66,0.4);
+  border-radius: 40px;
+  padding: 6px 20px;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: #f5c842;
+  margin-bottom: 2rem;
+}
+.badge-dot { width: 6px; height: 6px; border-radius: 50%; background: #f5c842; animation: pulse 1.5s ease-in-out infinite; }
+@keyframes pulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.4;transform:scale(0.6)} }
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 900;
+  font-size: clamp(2.8rem, 8vw, 6rem);
+  line-height: 1.05;
+  letter-spacing: 0.03em;
+  margin-bottom: 1.5rem;
+  position: relative;
 }
 
-.logo-marquee img {
-  height: 60px;
-  filter: drop-shadow(0 0 6px #f59e0b); /* golden glow, adjust color as you like */
-  transition: filter 0.3s ease;
+.title-main {
+  display: block;
+  color: #fff;
+  text-shadow: 0 0 40px rgba(245,200,66,0.5);
+}
+.title-gold {
+  display: block;
+  color: #f5c842;
+  text-shadow: 0 0 30px rgba(245,200,66,0.8), 0 0 60px rgba(245,200,66,0.4);
+  animation: glow 3s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  0%   { text-shadow: 0 0 30px rgba(245,200,66,0.6), 0 0 60px rgba(245,200,66,0.3); }
+  100% { text-shadow: 0 0 50px rgba(245,200,66,1.0), 0 0 90px rgba(245,200,66,0.6), 0 0 120px rgba(255,200,50,0.3); }
 }
 
-.logo-marquee img:hover {
-  filter: drop-shadow(0 0 12px #f59e0b);
+.hero-tagline {
+  font-size: 1rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: rgba(240,230,200,0.6);
+  margin-bottom: 3rem;
 }
 
-@keyframes scroll-logo {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-33.333%);
-  }
+/* ─── MARQUEE RIBBON ─── */
+.title-ribbon {
+  position: relative;
+  display: inline-block;
+}
+.title-ribbon::before,
+.title-ribbon::after {
+  content: '';
+  position: absolute;
+  top: 50%; left: -60px; right: -60px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, #f5c842 30%, #f5c842 70%, transparent);
+  opacity: 0.5;
 }
 
-/* ============================= */
-/* MOBILE OPTIMIZATION */
-/* ============================= */
+/* ─── STAR CLUSTER (decorative) ─── */
+.star-field {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+.star-field span {
+  position: absolute;
+  width: 3px; height: 3px;
+  border-radius: 50%;
+  background: #f5c842;
+  opacity: 0;
+  animation: starFade var(--d,3s) var(--dl,0s) ease-in-out infinite;
+}
+@keyframes starFade {
+  0%,100% { opacity:0; transform:scale(0.5); }
+  50%      { opacity:var(--op,0.8); transform:scale(1); }
+}
 
-.menu-toggle {
-  display: none;
-  background: none;
+/* ─── CTA BUTTON ─── */
+.cta-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #c9971a, #f5c842 50%, #c9971a);
+  color: #0a0005;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
   border: none;
-  font-size: 2rem;
-  color: #f59e0b;
+  padding: 1rem 2.5rem;
+  border-radius: 4px;
   cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+  box-shadow: 0 0 30px rgba(245,200,66,0.4), inset 0 1px 0 rgba(255,255,255,0.3);
+  background-size: 200% 100%;
+  animation: shimmer 3s linear infinite;
+}
+@keyframes shimmer {
+  0%   { background-position: 200% center; }
+  100% { background-position: -200% center; }
+}
+.cta-button:hover { transform: scale(1.04); box-shadow: 0 0 50px rgba(245,200,66,0.7); }
+
+/* ─── SECTION DIVIDER ─── */
+.section-divider {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 3rem auto;
+  max-width: 500px;
+  padding: 0 2rem;
+}
+.divider-line { flex: 1; height: 1px; background: linear-gradient(90deg, transparent, rgba(245,200,66,0.4), transparent); }
+.divider-star {
+  font-size: 1.2rem;
+  color: #f5c842;
+  text-shadow: 0 0 10px rgba(245,200,66,0.8);
 }
 
-/* Tablet & Mobile */
-@media (max-width: 900px) {
-
-  header.glass {
-    padding: 0.8rem 1rem;
-  }
-
-  nav {
-    position: fixed;
-    top: 0;
-    right: -100%;
-    height: 100vh;
-    width: 260px;
-    background: rgba(15,15,15,0.95);
-    backdrop-filter: blur(12px);
-    display: flex;
-    flex-direction: column;
-    padding-top: 6rem;
-    gap: 1.5rem;
-    transition: right 0.4s ease;
-    box-shadow: -10px 0 40px #000;
-  }
-
-  nav.active {
-    right: 0;
-  }
-
-  nav a {
-    margin-left: 0;
-    padding-left: 2rem;
-    font-size: 1.1rem;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-
-  /* Hero adjustments */
-  section.hero {
-    min-height: 70vh;
-    margin: 5rem 1rem 2rem;
-    padding: 1.5rem;
-  }
-
-  .hero-content h2 {
-    font-size: 2rem;
-  }
-
-  .hero-content p {
-    font-size: 1rem;
-  }
-
-  /* Grid improvements */
-  .grid-item {
-    min-width: 150px;
-    font-size: 0.9rem;
-  }
-
-  /* About / text spacing */
-  section.glass {
-    margin: 2rem 1rem;
-    padding: 1.5rem;
-  }
-
-  /* Overlay fix */
-  .project-content {
-    max-width: 90%;
-    font-size: 0.95rem;
-  }
-
+/* ─── PROJECTS ─── */
+#grid {
+  position: relative;
+  z-index: 2;
+  padding: 2rem 2rem 4rem;
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
+.section-heading {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+.section-heading .overline {
+  font-size: 0.65rem;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  color: rgba(245,200,66,0.6);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+.section-heading h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+.category-label {
+  font-size: 0.6rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgba(245,200,66,0.5);
+  margin: 2.5rem 0 1rem;
+  padding-left: 4px;
+}
+
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+
+.project-card {
+  position: relative;
+  background: rgba(30,10,20,0.8);
+  border: 1px solid rgba(245,200,66,0.15);
+  border-radius: 8px;
+  padding: 1.75rem 1.25rem 1.5rem;
+  cursor: pointer;
+  overflow: hidden;
+  transition: transform 0.25s, border-color 0.25s, box-shadow 0.25s;
+  text-decoration: none;
+}
+
+.project-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(245,200,66,0.07) 0%, transparent 60%);
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+.project-card:hover { transform: translateY(-4px); border-color: rgba(245,200,66,0.5); box-shadow: 0 8px 40px rgba(0,0,0,0.6), 0 0 30px rgba(245,200,66,0.15); }
+.project-card:hover::before { opacity: 1; }
+
+.card-number {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 0.75rem;
+  opacity: 0.15;
+  position: absolute;
+  top: 10px; right: 14px;
+  color: #f5c842;
+}
+
+.card-badge {
+  display: inline-block;
+  font-size: 0.55rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 3px 8px;
+  border-radius: 3px;
+  margin-bottom: 0.75rem;
+  background: rgba(245,200,66,0.12);
+  color: #f5c842;
+  border: 1px solid rgba(245,200,66,0.25);
+}
+
+.card-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #fff;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+}
+
+.card-desc {
+  font-size: 0.75rem;
+  color: rgba(240,230,200,0.45);
+  line-height: 1.5;
+}
+
+.card-accent {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 2px;
+}
+
+/* color accents */
+.accent-red  { background: linear-gradient(90deg, transparent, #ef4444, transparent); }
+.accent-gold { background: linear-gradient(90deg, transparent, #f5c842, transparent); }
+.accent-green{ background: linear-gradient(90deg, transparent, #22c55e, transparent); }
+.accent-pink { background: linear-gradient(90deg, transparent, #ff75e1, transparent); }
+.accent-blue { background: linear-gradient(90deg, transparent, #2563eb, transparent); }
+.accent-yel  { background: linear-gradient(90deg, transparent, #facc15, transparent); }
+.accent-crim { background: linear-gradient(90deg, transparent, #dc2626, transparent); }
+
+/* ─── INFO SECTIONS ─── */
+.info-section {
+  position: relative;
+  z-index: 2;
+  max-width: 780px;
+  margin: 0 auto 2rem;
+  padding: 2.5rem 3rem;
+  background: rgba(20,5,15,0.7);
+  border: 1px solid rgba(245,200,66,0.12);
+  border-radius: 10px;
+  backdrop-filter: blur(8px);
+}
+
+.info-section::before {
+  content: '';
+  position: absolute;
+  top: -1px; left: 10%; right: 10%;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, rgba(245,200,66,0.5), transparent);
+}
+
+.info-section h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #f5c842;
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.info-section h3::before {
+  content: '';
+  display: inline-block;
+  width: 3px; height: 1.6rem;
+  background: #f5c842;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+
+.info-section p, .info-section li {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: rgba(240,230,200,0.7);
+}
+
+.info-section ul {
+  list-style: none;
+  padding: 0;
+}
+.info-section ul li::before {
+  content: '◆ ';
+  color: rgba(245,200,66,0.5);
+  font-size: 0.6em;
+}
+.info-section a {
+  color: #f5c842;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(245,200,66,0.3);
+}
+.info-section a:hover { border-color: #f5c842; }
+
+.changelog-strong {
+  color: #f5c842;
+  font-weight: 700;
+  font-size: 0.85rem;
+  display: block;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.08em;
+}
+
+/* ─── FOOTER ─── */
+footer {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 2rem;
+  border-top: 1px solid rgba(245,200,66,0.12);
+  margin-top: 4rem;
+}
+footer p {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: rgba(245,200,66,0.4);
+}
+
+/* ─── OVERLAY ─── */
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(5,0,10,0.97);
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s;
+}
+.overlay.open { opacity: 1; pointer-events: all; }
+
+.overlay-inner {
+  max-width: 560px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+.overlay-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: var(--oc, #f5c842);
+  text-shadow: 0 0 40px var(--oc, #f5c842);
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  animation: glow 3s ease-in-out infinite alternate;
+}
+.overlay-desc {
+  font-size: 1rem;
+  line-height: 1.8;
+  color: rgba(240,230,200,0.8);
+  white-space: pre-line;
+  margin-bottom: 2rem;
+}
+.overlay-close {
+  background: none;
+  border: 1px solid rgba(245,200,66,0.3);
+  color: rgba(245,200,66,0.7);
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding: 10px 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.overlay-close:hover { background: rgba(245,200,66,0.1); color: #f5c842; }
+
+.overlay-divider {
+  width: 80px;
+  height: 1px;
+  background: var(--oc, #f5c842);
+  margin: 1rem auto 1.5rem;
+  opacity: 0.5;
+}
+
+/* ─── RESPONSIVE ─── */
+@media (max-width: 720px) {
+  nav { display: none; }
+  .info-section { padding: 1.75rem 1.5rem; }
+  .hero-title { font-size: 2.5rem; }
+}
 </style>
+</head>
+<body>
 
+<!-- Atmosphere -->
+<div class="curtain-bg"></div>
+<div class="marquee-border"></div>
+<div class="marquee-side left"></div>
+<div class="marquee-side right"></div>
+<div class="spotlight left"></div>
+<div class="spotlight right"></div>
 
+<!-- HEADER -->
+<header>
+  <div class="header-logo">
+    <span class="star-decoration">★</span>
+    Marigold Cinema's
+    <span class="star-decoration">★</span>
+  </div>
+  <nav>
+    <a href="#grid">Projects</a>
+    <a href="#work">Work With Us</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#changelog">Changelog</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="star-field" id="stars"></div>
+
+  <div class="award-badge">
+    <span class="badge-dot"></span>
+    Now Streaming — Indie Originals
+    <span class="badge-dot"></span>
+  </div>
+
+  <h1 class="hero-title">
+    <span class="title-main">Welcome to</span>
+    <span class="title-ribbon">
+      <span class="title-gold">Marigold Cinema's</span>
+    </span>
+  </h1>
+
+  <p class="hero-tagline">Where Indie Games &amp; Web Series Come to Life in Cinematic Gold</p>
+
+  <button class="cta-button" onclick="document.getElementById('grid').scrollIntoView({behavior:'smooth'})">
+    ★ &nbsp; Explore Our World &nbsp; ★
+  </button>
+</section>
+
+<!-- DIVIDER -->
+<div class="section-divider">
+  <div class="divider-line"></div>
+  <div class="divider-star">✦</div>
+  <div class="divider-line"></div>
+</div>
+
+<!-- PROJECTS -->
+<section id="grid">
+  <div class="section-heading">
+    <span class="overline">On the Marquee</span>
+    <h3>Our Projects</h3>
+  </div>
+
+  <p class="category-label">✦ &nbsp; Marigold Originals</p>
+  <div class="projects-grid">
+    <div class="project-card" onclick="showProject('Fazbear\'s Fright')">
+      <span class="card-number">01</span>
+      <div class="card-badge">Series</div>
+      <div class="card-title">Fazbear's Fright</div>
+      <div class="card-desc">One night. One horror attraction. Too many secrets.</div>
+      <div class="card-accent accent-red"></div>
+    </div>
+    <div class="project-card" onclick="showProject('The Nightshift')">
+      <span class="card-number">02</span>
+      <div class="card-badge">Found Footage</div>
+      <div class="card-title">The Nightshift</div>
+      <div class="card-desc">Graveyard shift. Different locations. Every night a story.</div>
+      <div class="card-accent accent-green"></div>
+    </div>
+    <div class="project-card" onclick="showProject('White Lies, Red Truths')">
+      <span class="card-number">03</span>
+      <div class="card-badge">Coming Soon</div>
+      <div class="card-title">White Lies, Red Truths</div>
+      <div class="card-desc">Something is hidden beneath the surface.</div>
+      <div class="card-accent accent-crim"></div>
+    </div>
+    <div class="project-card" onclick="showProject('Happy Face')">
+      <span class="card-number">04</span>
+      <div class="card-badge">Coming Soon</div>
+      <div class="card-title">Happy Face</div>
+      <div class="card-desc">Not everything that smiles is friendly.</div>
+      <div class="card-accent accent-yel"></div>
+    </div>
+    <div class="project-card" onclick="showProject('TreatMares')">
+      <span class="card-number">05</span>
+      <div class="card-badge">Comics</div>
+      <div class="card-title">TreatMares</div>
+      <div class="card-desc">Cute characters, chaotic moments.</div>
+      <div class="card-accent accent-pink"></div>
+    </div>
+  </div>
+
+  <p class="category-label">✦ &nbsp; Collabs</p>
+  <div class="projects-grid">
+    <div class="project-card" onclick="showProject('Fazbear Adventures')">
+      <span class="card-number">C1</span>
+      <div class="card-badge">Collab Series</div>
+      <div class="card-title">Fazbear Adventures</div>
+      <div class="card-desc">Freddy and gang in wacky, chaotic adventures.</div>
+      <div class="card-accent accent-gold"></div>
+    </div>
+    <div class="project-card" onclick="showProject('Rat & Cat Theater')">
+      <span class="card-number">C2</span>
+      <div class="card-badge">Collab Series</div>
+      <div class="card-title">Rat &amp; Cat Theater</div>
+      <div class="card-desc">A refurbished venue with a dark, storied past.</div>
+      <div class="card-accent accent-blue"></div>
+    </div>
+  </div>
+</section>
+
+<!-- DIVIDER -->
+<div class="section-divider">
+  <div class="divider-line"></div>
+  <div class="divider-star">✦</div>
+  <div class="divider-line"></div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="info-section" style="display:block; margin-bottom:2rem;">
+  <h3>About Us</h3>
+  <p>Marigold Cinema's is a creative studio and YouTube channel focused on bringing original indie games and web series to life. We're passionate about storytelling, world-building, and exploring new ideas through animation, gameplay, and cinematic content.<br><br>
+  Our projects are made by indie creators, for indie fans — whether it's a short web series or a full game experience, we put care into every detail. We're always experimenting, collaborating, and pushing our limits to make something unique.<br><br>
+  If you're into fresh, independent content with personality, you're in the right place.</p>
+</section>
+
+<!-- WORK WITH US -->
+<section id="work" class="info-section">
+  <h3>Work With Us</h3>
+  <p>To try and work with us, you'll need to contact either the manager or the owner directly. After that, a document with more information will be sent to you.</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="info-section">
+  <h3>Contact</h3>
+  <p>
+    Email us at: <a href="mailto:leemhuis.ryan@gmail.com">leemhuis.ryan@gmail.com</a><br><br>
+    Or request DMs from the owner in our Discord:<br>
+    <a href="https://discord.gg/dN3XjdQJxr" target="_blank">discord.gg/dN3XjdQJxr</a>
+  </p>
+</section>
+
+<!-- CHANGELOG -->
+<section id="changelog" class="info-section">
+  <h3>Changelog</h3>
+  <ul>
+    <span class="changelog-strong">Major Update</span>
+    <li>Removed Orange INC: Multiversal Shenanigans</li>
+    <li>Removed Showtime's End</li>
+    <li>Removed The Offenders</li>
+    <li>Removed Malware</li>
+    <li>Removed FNaF6+, FNaF: 2 Rewired, Boundless Conflict, Five Nights at Blanks</li>
+    <span class="changelog-strong">Marigold Originals</span>
+    <li>Added The Nightshift</li>
+    <li>Added White Lies, Red Truths</li>
+    <li>Added Happy Face</li>
+    <span class="changelog-strong">General</span>
+    <li>Added Series Info panels</li>
+    <li>Fixed website on mobile devices</li>
+    <li>Added optimization</li>
+    <li>Future updates will refresh the UI</li>
+  </ul>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="section-divider" style="margin-bottom:1.5rem;">
+    <div class="divider-line"></div>
+    <div class="divider-star" style="font-size:0.8rem;">✦</div>
+    <div class="divider-line"></div>
+  </div>
+  <p>&copy; 2026 Marigold Cinema's &nbsp;·&nbsp; All Rights Reserved &nbsp;·&nbsp; ★</p>
+</footer>
+
+<!-- OVERLAY -->
+<div class="overlay" id="overlay" onclick="closeOverlay(event)">
+  <div class="overlay-inner">
+    <div class="overlay-title" id="overlay-title"></div>
+    <div class="overlay-divider" id="overlay-divider"></div>
+    <div class="overlay-desc" id="overlay-desc"></div>
+    <button class="overlay-close" onclick="closeOverlay()">Close ×</button>
+  </div>
+</div>
+
+<script>
+const PROJECTS = {
+  "Fazbear's Fright": {
+    color: "#ef4444",
+    desc: "Join Nicholas Hart as he works the nightshift at Fazbear's Fright, a horror attraction built around the urban legends of Freddy Fazbear's Pizzeria. As the nights go on, Nick soon realizes this place has mysteries of its own."
+  },
+  "The Nightshift": {
+    color: "#22c55e",
+    desc: "Follow Felix Connors as he works the graveyard shift at different Fazbear Entertainment franchises and locations in a found footage style series."
+  },
+  "White Lies, Red Truths": {
+    color: "#dc2626",
+    desc: "More information coming in the future. Stay tuned."
+  },
+  "Happy Face": {
+    color: "#facc15",
+    desc: "More information coming in the future. Stay tuned."
+  },
+  "TreatMares": {
+    color: "#ff75e1",
+    desc: "TreatMares is a series of comics following cute little characters through comedic moments.\n\nVisit the TreatMares website to read more!",
+    link: "https://lucydotjson.github.io/Treatmares-comic-site/"
+  },
+  "Fazbear Adventures": {
+    color: "#f5c842",
+    desc: "Follow Freddy and his gang as they experience wacky adventures that almost always lead into chaos, arguments, and disasters."
+  },
+  "Rat & Cat Theater": {
+    color: "#2563eb",
+    desc: "Rat & Cat Theater takes place in the late 2020's in a refurbished version of the original Rat & Cat Theater from the 60's where various tragedies from the past took place."
+  }
+};
+
+function showProject(name) {
+  const p = PROJECTS[name];
+  if (!p) return;
+  if (name === "TreatMares") { window.open(p.link, "_blank"); return; }
+  const overlay = document.getElementById("overlay");
+  document.getElementById("overlay-title").textContent = name.toUpperCase();
+  document.getElementById("overlay-title").style.color = p.color;
+  document.getElementById("overlay-title").style.textShadow = "0 0 40px " + p.color;
+  document.getElementById("overlay-divider").style.background = p.color;
+  document.getElementById("overlay-desc").textContent = p.desc;
+  overlay.classList.add("open");
+}
+
+function closeOverlay(e) {
+  if (!e || e.target === document.getElementById("overlay") || e.target.classList.contains("overlay-close")) {
+    document.getElementById("overlay").classList.remove("open");
+  }
+}
+
+// Star field
+const sf = document.getElementById("stars");
+for (let i = 0; i < 60; i++) {
+  const s = document.createElement("span");
+  s.style.cssText = `left:${Math.random()*100}%;top:${Math.random()*100}%;--d:${2+Math.random()*4}s;--dl:${Math.random()*5}s;--op:${0.4+Math.random()*0.6};`;
+  sf.appendChild(s);
+}
+</script>
 </body>
 </html>
